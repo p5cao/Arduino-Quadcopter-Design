@@ -1,5 +1,7 @@
 #include "quad_remote.h"
 
+#include <SoftwareSerial2.h>
+
 
 SoftwareSerial lcdSerial(LCD_TX_PIN, LCD_RX_PIN);
 

@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -704,7 +704,7 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Yangsheng"/>
-<attribute name="DIST" value="Yangsheng Hu"/>
+<attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="1"/>
 </technology>
 </technologies>

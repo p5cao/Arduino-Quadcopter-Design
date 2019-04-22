@@ -1252,6 +1252,7 @@
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<text x="6.27" y="-2.375" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 <text x="6.2938" y="2.3288" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
@@ -4307,7 +4308,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS73633-DBVT" uservalue="yes">
+<deviceset name="TPS73633-DBVT">
 <description>LP3985-series voltage regulators.</description>
 <gates>
 <gate name="G$1" symbol="TPS736*" x="0" y="0"/>
@@ -4445,27 +4446,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </library>
 <library name="custom">
 <packages>
-<package name="LED">
-<smd name="A" x="-1" y="0" dx="1" dy="1.25" layer="1"/>
-<smd name="C" x="1" y="0" dx="1" dy="1.25" layer="1"/>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
-<wire x1="-0.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="0.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1.6" y1="0.8" x2="0.6" y2="0.8" width="0.127" layer="21"/>
-<circle x="2.1" y="0" radius="0.1" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="1" x2="1.8" y2="1" width="0.127" layer="39"/>
-<wire x1="1.8" y1="1" x2="1.8" y2="-1" width="0.127" layer="39"/>
-<wire x1="1.8" y1="-1" x2="-1.8" y2="-1" width="0.127" layer="39"/>
-<wire x1="-1.8" y1="-1" x2="-1.8" y2="1" width="0.127" layer="39"/>
-<text x="-2.3" y="1.2" size="0.9" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.3" y="-2.1" size="0.9" layer="27" font="vector">&gt;VALUE</text>
-</package>
 <package name="LSM9DS1_IMU">
 <smd name="RES@3" x="1.7" y="0.215" dx="0.9" dy="0.28" layer="1"/>
 <smd name="RES@4" x="1.7" y="0.645" dx="0.9" dy="0.28" layer="1"/>
@@ -4768,23 +4748,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </package>
 </packages>
 <symbols>
-<symbol name="LED">
-<pin name="A" x="-10.16" y="0" length="short"/>
-<pin name="C" x="2.54" y="0" length="short" rot="R180"/>
-<text x="-7.62" y="5.08" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-5.08" size="1.27" layer="96" font="vector">&gt;VALUE</text>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.778" x2="-3.302" y2="2.54" width="0.127" layer="94"/>
-<wire x1="-3.302" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="94"/>
-<wire x1="-3.302" y1="2.54" x2="-3.302" y2="2.032" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="1.778" x2="-2.032" y2="2.54" width="0.127" layer="94"/>
-<wire x1="-2.032" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="94"/>
-<wire x1="-2.032" y1="2.54" x2="-2.032" y2="2.032" width="0.127" layer="94"/>
-</symbol>
 <symbol name="IMU_LSM">
 <pin name="VDD" x="-15.24" y="17.78" length="middle" rot="R270"/>
 <pin name="VDDIO" x="-10.16" y="17.78" length="middle" rot="R270"/>
@@ -4852,37 +4815,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" prefix="D" uservalue="yes">
-<description>&lt;b&gt;LITEON_RED_LED&lt;\b&gt; 
-
-&lt;p&gt;Technical specifications:
-&lt;ul&gt;
-&lt;li&gt;Reverse Voltage: 5 V. 
-&lt;li&gt;Power Dissipation: 100 mW.
-&lt;li&gt;Peak Forward Current: 120 mA.
-&lt;li&gt;Continuous Forward Current: 30 mA. 
-&lt;li&gt;Operating Temperature: -55 °C to 85 °C.&lt;\li&gt;
-&lt;\ul&gt;
-&lt;\p&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-LITEON-C170EKT-RED-LED" package="LED">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Yangsheng Hu"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="160-1178-1-ND"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="IMU_LSM" prefix="U">
 <description>&lt;b&gt;ST_LSM9DS1_IMU_LGA&lt;\b&gt; 
 
@@ -5334,6 +5266,27 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <text x="-1.9" y="-1.8" size="0.9" layer="25" font="vector">&gt;NAME</text>
 <text x="-2.4" y="1" size="0.9" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="LED">
+<smd name="A" x="-1" y="0" dx="1" dy="1.25" layer="1"/>
+<smd name="C" x="1" y="0" dx="1" dy="1.25" layer="1"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="0.6" y2="0.8" width="0.127" layer="21"/>
+<circle x="2.1" y="0" radius="0.1" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="1" x2="1.8" y2="1" width="0.127" layer="39"/>
+<wire x1="1.8" y1="1" x2="1.8" y2="-1" width="0.127" layer="39"/>
+<wire x1="1.8" y1="-1" x2="-1.8" y2="-1" width="0.127" layer="39"/>
+<wire x1="-1.8" y1="-1" x2="-1.8" y2="1" width="0.127" layer="39"/>
+<text x="-2.3" y="1.2" size="0.9" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.3" y="-2.1" size="0.9" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -5438,6 +5391,38 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
+<deviceset name="DIODE-LED-LITEON-C170EKT-RED" prefix="D" uservalue="yes">
+<description>&lt;b&gt;LITEON_RED_LED&lt;\b&gt; 
+
+&lt;p&gt;Technical specifications:
+&lt;ul&gt;
+&lt;li&gt;Reverse Voltage: 5 V. 
+&lt;li&gt;Power Dissipation: 100 mW.
+&lt;li&gt;Peak Forward Current: 120 mA.
+&lt;li&gt;Continuous Forward Current: 30 mA. 
+&lt;li&gt;Operating Temperature: -55 °C to 85 °C.&lt;\li&gt;
+&lt;\ul&gt;
+&lt;\p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-LITEON-C170EKT-RED-LED" package="LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Yangsheng Hu"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="160-1178-1-ND"/>
+<attribute name="VALUE" value="red"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5482,7 +5467,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="GND13" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND14" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="D1" library="quadparts_prebuilt" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
-<part name="D2" library="custom" deviceset="LED" device="-LITEON-C170EKT-RED-LED" value="red"/>
 <part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-330" value="330"/>
 <part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-330" value="330"/>
 <part name="P+3" library="quadparts_prebuilt" deviceset="3V3" device=""/>
@@ -5615,6 +5599,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="R27" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="R28" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="D21" library="LED" deviceset="DIODE-LED-SMD-2012-0805-RED" device="-RED" value="red"/>
+<part name="D2" library="LED" deviceset="DIODE-LED-LITEON-C170EKT-RED" device="-LITEON-C170EKT-RED-LED" value="red"/>
 </parts>
 <sheets>
 <sheet>
@@ -5798,10 +5783,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <instance part="D1" gate="G$1" x="187.96" y="101.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="189.738" y="104.648" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="182.753" y="104.902" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="D2" gate="G$1" x="198.12" y="99.06" smashed="yes" rot="MR270">
-<attribute name="NAME" x="203.2" y="106.68" size="1.27" layer="95" font="vector" rot="MR270"/>
-<attribute name="VALUE" x="195.58" y="106.68" size="1.27" layer="96" font="vector" rot="MR270"/>
 </instance>
 <instance part="R2" gate="G$1" x="187.96" y="116.84" smashed="yes" rot="R90">
 <attribute name="VALUE" x="191.262" y="113.03" size="1.778" layer="96" rot="R90"/>
@@ -6266,6 +6247,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="NAME" x="368.3" y="-43.18" size="1.778" layer="95" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="373.38" y="-43.18" size="1.778" layer="96" font="vector" rot="MR270"/>
 </instance>
+<instance part="D2" gate="G$1" x="198.12" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="200.66" y="104.14" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="193.04" y="104.14" size="1.778" layer="96" font="vector" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6625,9 +6610,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="187.96" y1="96.52" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="198.12" y1="96.52" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -6975,9 +6960,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="109.22" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="198.12" y1="111.76" x2="198.12" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">

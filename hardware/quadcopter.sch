@@ -4357,7 +4357,32 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER-10POS" prefix="J" uservalue="yes">
+<deviceset name="HEADER-4POS" prefix="J">
+<gates>
+<gate name="G$1" symbol="HEADER-4POS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0.1IN-FEMALE" package="HDRVR4W80P254_1X4_1066X254X850B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10071419/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="S7002-ND "/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SIP-10_" prefix="J" uservalue="yes">
 <description>10 pin single inline pin header, socket, or connector</description>
 <gates>
 <gate name="G$1" symbol="RESOLVED-SIP-10_" x="0" y="0"/>
@@ -4412,31 +4437,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="MPN" value="68000-110HLF"/>
 <attribute name="PRICE" value="0.55"/>
 <attribute name="REVIEWER" value="Swanson"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HEADER-4POS" prefix="J">
-<gates>
-<gate name="G$1" symbol="HEADER-4POS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0.1IN-FEMALE" package="HDRVR4W80P254_1X4_1066X254X850B">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10071419/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="S7002-ND "/>
 </technology>
 </technologies>
 </device>
@@ -4545,6 +4545,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <package name="NET_BRIDGE">
 <smd name="P1" x="-0.2" y="0" dx="0.5" dy="0.5" layer="1" stop="no" cream="no"/>
 <smd name="P2" x="0.2" y="0" dx="0.5" dy="0.5" layer="1" stop="no" cream="no"/>
+<text x="-2" y="0.5" size="0.9" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="RESC2012X60_HS">
 <description>Resistor, Chip; 2.00 mm L X 1.25 mm W X 0.60 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -4901,7 +4902,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CUSTOM" value=""/>
+<attribute name="CREATOR" value="Yangsheng"/>
+<attribute name="DIST" value="Yangsheng Hu"/>
+<attribute name="DISTPN" value="1"/>
 </technology>
 </technologies>
 </device>
@@ -5550,7 +5553,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="P+20" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="D7" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="U8" library="custom" deviceset="NET_BRIDGE" device="-BRIDGE-SMD"/>
-<part name="J4" library="quadparts_prebuilt" deviceset="HEADER-10POS" device="TH-254X10"/>
 <part name="P+5" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="P+6" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 <part name="GND40" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -5600,6 +5602,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="R28" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="D21" library="LED" deviceset="DIODE-LED-SMD-2012-0805-RED" device="-RED" value="red"/>
 <part name="D2" library="LED" deviceset="DIODE-LED-LITEON-C170EKT-RED" device="-LITEON-C170EKT-RED-LED" value="red"/>
+<part name="J6" library="quadparts_prebuilt" deviceset="SIP-10_" device="TH-254X10"/>
 </parts>
 <sheets>
 <sheet>
@@ -6062,10 +6065,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <instance part="U8" gate="G$1" x="55.88" y="121.92" smashed="yes">
 <attribute name="NAME" x="53.34" y="124.46" size="1.27" layer="95" font="vector"/>
 </instance>
-<instance part="J4" gate="G$1" x="363.22" y="127" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="363.22" y="124.46" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="356.362" y="127" size="1.778" layer="95"/>
-</instance>
 <instance part="P+5" gate="VCC" x="345.44" y="157.48" smashed="yes">
 <attribute name="VALUE" x="345.44" y="160.02" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
@@ -6251,6 +6250,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="NAME" x="200.66" y="104.14" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="193.04" y="104.14" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
+<instance part="J6" gate="G$1" x="363.22" y="154.94" smashed="yes" rot="R180">
+<attribute name="VALUE" x="363.22" y="157.48" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="356.362" y="154.94" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6330,9 +6333,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <label x="43.18" y="-58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="5"/>
 <wire x1="353.06" y1="139.7" x2="350.52" y2="139.7" width="0.1524" layer="91"/>
 <label x="350.52" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="RX0" class="0">
@@ -6382,9 +6385,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <label x="91.44" y="-58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="7"/>
 <wire x1="353.06" y1="144.78" x2="350.52" y2="144.78" width="0.1524" layer="91"/>
 <label x="350.52" y="144.78" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="4" class="0">
@@ -6403,9 +6406,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <label x="139.7" y="-58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="8"/>
 <wire x1="353.06" y1="147.32" x2="350.52" y2="147.32" width="0.1524" layer="91"/>
 <label x="350.52" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="5" class="0">
@@ -6424,9 +6427,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <label x="187.96" y="-58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="9"/>
 <wire x1="353.06" y1="149.86" x2="350.52" y2="149.86" width="0.1524" layer="91"/>
 <label x="350.52" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="6" class="0">
@@ -6720,8 +6723,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="335.28" y1="127" x2="335.28" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="335.28" y1="132.08" x2="353.06" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -6837,8 +6840,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <segment>
 <pinref part="P+6" gate="G$1" pin="3V3"/>
 <wire x1="335.28" y1="154.94" x2="335.28" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="6"/>
 <wire x1="335.28" y1="142.24" x2="353.06" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <pinref part="P+21" gate="G$1" pin="3V3"/>
@@ -7006,9 +7009,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <label x="116.84" y="10.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="353.06" y1="134.62" x2="350.52" y2="134.62" width="0.1524" layer="91"/>
 <label x="350.52" y="134.62" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
@@ -7034,9 +7037,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <junction x="119.38" y="12.7"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="4"/>
 <wire x1="353.06" y1="137.16" x2="350.52" y2="137.16" width="0.1524" layer="91"/>
 <label x="350.52" y="137.16" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="J6" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="3"/>
@@ -7106,8 +7109,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <segment>
 <pinref part="P+5" gate="VCC" pin="VBAT"/>
 <wire x1="345.44" y1="154.94" x2="345.44" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="10"/>
 <wire x1="345.44" y1="152.4" x2="353.06" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="P+23" gate="VCC" pin="VBAT"/>
@@ -7227,8 +7230,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <segment>
 <pinref part="GND41" gate="1" pin="BAT_GND"/>
 <wire x1="345.44" y1="127" x2="345.44" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="345.44" y1="129.54" x2="353.06" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="10"/>
 </segment>
 <segment>
 <pinref part="Q5" gate="G$1" pin="S"/>

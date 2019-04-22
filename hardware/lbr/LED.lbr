@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -124,7 +124,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODE-LED-SMD-2012-0805-BLUE" prefix="D">
+<deviceset name="DIODE-LED-SMD-2012-0805-BLUE" prefix="D" uservalue="yes">
 <description>light emitting diode</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -149,7 +149,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE-LED-SMD-2012-0805-YELLOW" uservalue="yes">
+<deviceset name="DIODE-LED-SMD-2012-0805-YELLOW" prefix="D" uservalue="yes">
 <description>light emitting diode</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -162,7 +162,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="Pengcheng" constant="no"/>
+<attribute name="CREATOR" value="Pengcheng"/>
 <attribute name="DIST" value="DigiKey"/>
 <attribute name="DISTPN" value="160-1416-1-ND"/>
 <attribute name="MFR" value="Lite-On Inc"/>

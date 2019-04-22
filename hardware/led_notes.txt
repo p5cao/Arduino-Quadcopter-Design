@@ -1,0 +1,5 @@
+We are connecting the Leds to the pwm pin 9 via the mosfet in our custom library, which is the Si302CDS N-Channel 20V (D-S) mosfet provided by Vishay Siliconix. We connect S-gate of the mosfet to pin 9 of the microcontroller, the G-gate to BAT_GND, and D-gate to all the parallel-connected LEDs. Each LED has a resistor attached serially to it to restrict the currents, and the power for LEDs is provided by V_BAT. We use the equation R = (V_source - V_LED)/I_LED. 
+
+The red and yellow LEDs have the maximum forward current of 25mA at maximum V_source of 4.2V, which corresponds to 1.25 relative luminous intensity. The anticipated serial resistor to be used here will be 88 Ohm. We are choosing the YAGEO RC0805FR-0786R6L resistor with 86.6 resistance to connect to the diode.
+
+The Blue LED also has the maximum forward of 25mA (1.2 relative luminous intensity), with the correspondng forward voltage of 3.5V. So based on Ohms Law we need to connect the Blue LED with a serial resistor of 28 Ohm. We shall choose to use YAGEO RC0805FR-0728RL resistor with exactly 28 Ohm resistance.

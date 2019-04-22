@@ -5363,7 +5363,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODE-LED-SMD-2012-0805-BLUE" prefix="D">
+<deviceset name="DIODE-LED-SMD-2012-0805-BLUE" prefix="D" uservalue="yes">
 <description>light emitting diode</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -5413,7 +5413,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE-LED-SMD-2012-0805-YELLOW" uservalue="yes">
+<deviceset name="DIODE-LED-SMD-2012-0805-YELLOW" prefix="D" uservalue="yes">
 <description>light emitting diode</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -5426,7 +5426,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="Pengcheng" constant="no"/>
+<attribute name="CREATOR" value="Pengcheng"/>
 <attribute name="DIST" value="DigiKey"/>
 <attribute name="DISTPN" value="160-1416-1-ND"/>
 <attribute name="MFR" value="Lite-On Inc"/>
@@ -5583,7 +5583,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="R11" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-28" value="28"/>
 <part name="R12" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="D9" library="LED" deviceset="DIODE-LED-SMD-2012-0805-RED" device="-RED" value="red"/>
-<part name="U$1" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
+<part name="D22" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
 <part name="R13" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="D10" library="LED" deviceset="DIODE-LED-SMD-2012-0805-BLUE" device="-BLUE" value="BLUE"/>
 <part name="R14" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-28" value="28"/>
@@ -5607,11 +5607,11 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="R23" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-28" value="28"/>
 <part name="D20" library="LED" deviceset="DIODE-LED-SMD-2012-0805-BLUE" device="-BLUE" value="BLUE"/>
 <part name="R24" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-28" value="28"/>
-<part name="U$2" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
+<part name="D23" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
 <part name="R25" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
-<part name="U$3" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
+<part name="D24" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
 <part name="R26" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
-<part name="U$4" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
+<part name="D25" library="LED" deviceset="DIODE-LED-SMD-2012-0805-YELLOW" device="-YELLOW" value="yellow"/>
 <part name="R27" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="R28" library="custom" deviceset="RESISTOR_" device="SMD-2012-0805-88.6" value="86.6"/>
 <part name="D21" library="LED" deviceset="DIODE-LED-SMD-2012-0805-RED" device="-RED" value="red"/>
@@ -6138,7 +6138,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="NAME" x="360.68" y="-43.18" size="1.778" layer="95" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="365.76" y="-43.18" size="1.778" layer="96" font="vector" rot="MR270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="327.66" y="-45.72" smashed="yes" rot="MR270">
+<instance part="D22" gate="G$1" x="327.66" y="-45.72" smashed="yes" rot="MR270">
 <attribute name="NAME" x="325.12" y="-43.18" size="1.778" layer="95" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="330.2" y="-43.18" size="1.778" layer="96" font="vector" rot="MR270"/>
 </instance>
@@ -6234,7 +6234,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="VALUE" x="318.262" y="-39.37" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="313.4614" y="-39.37" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="U$2" gate="G$1" x="335.28" y="-45.72" smashed="yes" rot="MR270">
+<instance part="D23" gate="G$1" x="335.28" y="-45.72" smashed="yes" rot="MR270">
 <attribute name="NAME" x="332.74" y="-43.18" size="1.778" layer="95" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="337.82" y="-43.18" size="1.778" layer="96" font="vector" rot="MR270"/>
 </instance>
@@ -6242,7 +6242,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="VALUE" x="338.582" y="-39.37" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="333.7814" y="-39.37" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="U$3" gate="G$1" x="342.9" y="-45.72" smashed="yes" rot="MR270">
+<instance part="D24" gate="G$1" x="342.9" y="-45.72" smashed="yes" rot="MR270">
 <attribute name="NAME" x="340.36" y="-43.18" size="1.778" layer="95" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="345.44" y="-43.18" size="1.778" layer="96" font="vector" rot="MR270"/>
 </instance>
@@ -6250,7 +6250,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="VALUE" x="346.202" y="-39.37" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="341.4014" y="-39.37" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="U$4" gate="G$1" x="350.52" y="-45.72" smashed="yes" rot="MR270">
+<instance part="D25" gate="G$1" x="350.52" y="-45.72" smashed="yes" rot="MR270">
 <attribute name="NAME" x="347.98" y="-43.18" size="1.778" layer="95" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="353.06" y="-43.18" size="1.778" layer="96" font="vector" rot="MR270"/>
 </instance>
@@ -7113,13 +7113,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <junction x="187.96" y="-38.1"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="142.24" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="139.7" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="P+19" gate="VCC" pin="VBAT"/>
-<wire x1="55.88" y1="139.7" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+20" gate="VCC" pin="VBAT"/>
 <wire x1="66.04" y1="154.94" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="D7" gate="G$1" pin="A"/>
@@ -7187,6 +7180,13 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="370.84" y1="-30.48" x2="363.22" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="363.22" y="-30.48"/>
+</segment>
+<segment>
+<pinref part="P+19" gate="VCC" pin="VBAT"/>
+<wire x1="55.88" y1="154.94" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="139.7" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BAT_GND" class="0">
@@ -7352,28 +7352,28 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <net name="N$22" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="A"/>
+<pinref part="D25" gate="G$1" pin="A"/>
 <wire x1="350.52" y1="-40.64" x2="350.52" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="A"/>
+<pinref part="D24" gate="G$1" pin="A"/>
 <wire x1="342.9" y1="-40.64" x2="342.9" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="A"/>
+<pinref part="D23" gate="G$1" pin="A"/>
 <wire x1="335.28" y1="-40.64" x2="335.28" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="A"/>
+<pinref part="D22" gate="G$1" pin="A"/>
 <wire x1="327.66" y1="-40.64" x2="327.66" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7511,19 +7511,19 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="314.96" y1="-50.8" x2="314.96" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="-53.34" x2="307.34" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="307.34" y="-53.34"/>
-<pinref part="U$1" gate="G$1" pin="C"/>
+<pinref part="D22" gate="G$1" pin="C"/>
 <wire x1="327.66" y1="-50.8" x2="327.66" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="-53.34" x2="314.96" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="314.96" y="-53.34"/>
-<pinref part="U$2" gate="G$1" pin="C"/>
+<pinref part="D23" gate="G$1" pin="C"/>
 <wire x1="335.28" y1="-50.8" x2="335.28" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="-53.34" x2="327.66" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="327.66" y="-53.34"/>
-<pinref part="U$3" gate="G$1" pin="C"/>
+<pinref part="D24" gate="G$1" pin="C"/>
 <wire x1="342.9" y1="-50.8" x2="342.9" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="-53.34" x2="335.28" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="335.28" y="-53.34"/>
-<pinref part="U$4" gate="G$1" pin="C"/>
+<pinref part="D25" gate="G$1" pin="C"/>
 <wire x1="350.52" y1="-50.8" x2="350.52" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="-53.34" x2="342.9" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="342.9" y="-53.34"/>

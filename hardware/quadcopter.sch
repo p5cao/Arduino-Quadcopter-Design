@@ -4903,7 +4903,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Yangsheng"/>
-<attribute name="DIST" value="Yangsheng Hu"/>
+<attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="1"/>
 </technology>
 </technologies>

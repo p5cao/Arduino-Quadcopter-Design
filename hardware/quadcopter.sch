@@ -6712,12 +6712,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <junction x="45.72" y="25.4"/>
 </segment>
 <segment>
-<pinref part="P+11" gate="G$1" pin="3V3"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="27.94" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="30.48" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+12" gate="G$1" pin="3V3"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="27.94" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
@@ -6760,6 +6754,11 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <pinref part="J3" gate="G$1" pin="4"/>
 <pinref part="P+24" gate="G$1" pin="3V3"/>
 <wire x1="345.44" y1="25.4" x2="363.22" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+11" gate="G$1" pin="3V3"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="27.94" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">

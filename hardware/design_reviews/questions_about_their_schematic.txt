@@ -36,11 +36,11 @@ Section IV: Motor Drivers
 
 Section V: Bootloader & FTDI programmer
 
-Both seem fine.
+
 
 Section V: MCU
 
-All seem fine.
+
 
 Section VI: IMU
 

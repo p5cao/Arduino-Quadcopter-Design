@@ -1,11 +1,24 @@
-Reviews for the Schematic drawing (Sudo_Wodoo)
--- reviewed by Yangsheng Hu and Pengcheng Cao (2019/05/01)
+Reviews for the Schematic drawing 
+
+Design review partner team:
+sudo_woodo:
+
+Brendon Chen<brc019@ucsd.edu>
+Devin Moore<djm016@ucsd.edu>
+
+-- reviewed by our team:
+killersquad:
+
+Yangsheng Hu<yah071@eng.ucsd.edu>
+Pengcheng Cao<p5cao@eng.ucsd.edu>
+
+05/01/2019
 
 Section I: Power supply
 
 1. you should use the provided VBAT symbol instead of define a VBAT label on you net conected to enable pin.
 
-2. try not to divide your schematic into too many components.
+2. try not to divide your subschematic into too many components.
 
 Section II: Headers
 
@@ -32,4 +45,3 @@ All seem fine.
 Section VI: IMU
 
 1. Your IMU symbol may be problematic. You should only place power pins at the top and ground pins at the bottom.  Dont treat C1 and CAP as Grounds they still have caps connected.
-

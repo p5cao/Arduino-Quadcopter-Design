@@ -1,0 +1,37 @@
+Reviews for the board design (Devin)
+--reviewed by Yangsheng Hu and Pengcheng Cao (2019/05/01)
+
+Antenna and Antenna Driver:
+1. The wire connection for the antenna is right. However, mayber it's better to do an mimic placement on the board as given in the repo. More specifically,  capacitor C1 can be moved to right up to the Balun.
+2. I noticed that the pours are only covering the area below the capacitor C1. In fact, you can cover C1, too. Then, the GND pad on C1 could be connected to the GND plane directly through a via or so. 
+3. Since we prefer to have nothing around the RF area, then we should be careful about the signals A7, A5, A3, which are pretty close to the balun in your design.
+
+Power and Ground:
+1. Some parts of the power/ground pours are very narrow (<0.5mm). Display each layer separately and pay attention to those parts with a cross shape, usually sitting in the throughhole. For example, if you check your throughhole GND of the IMU rescue header, and display only the ground plane layer 2, then you can see that cross parts are less than 0.5mm, which is roughly 0.3mm. This happens to be your PWR net class trace width. Probably this is a bug in autorouting such that some power/ground traces may finally be part of the power/ground pours during the final steps of the pour optimization. A possible solution: reduce the traces layout for power/ground signal; instead, use a via to directly push it into a power/gound plane. By doing this, the cross connection in the throughhole will be generated using the default thick metals.
+2. For the Highcurrent net class, I think you've set your via diameters too small. The drill size should give an annular ring diameter of 30mil with annular ring to be 25% of drill radius. Your drill diameter should be no smaller than 24 mil.
+
+
+IMU:
+1. The capacitors are lying too close to each other, this would be hard for you to drop your parts on your board. In fact, not all the capacitors are important and sensitive. So, just make sure the sensitive ones are placed as near as possible. 
+2. The position of the IMU header should be refined to make sure that the IMU on the breakout board(https://www.adafruit.com/product/3387) is roughly in the center. It seems like you can move the header a little bit to the right.
+
+Microcontroller:
+1. Similar to the IMU, the capacitors arel lying too close to each other. Professor suggests to allow 1-2mm between parts to make assembly easy.
+
+Power Supply:
+1. 3V3 plane power plane is not running underneath the voltage regulator U5. Thus, it will take some distance to go from your regulated 3V3 output to your other 3V3 parts.
+ 
+
+Mechanical:
+1. The arm length (from the center of DC motor to the edge of the board is about 31mm) is O.K. but maybe too short since the radius of the propeller is 55/2=27.5mm.  
+2. The direction of the battery header B2 should be taken care of since it is facing the upper left propeller, which is pretty close (I did a basic calculation which is about 12mm). You will be struggling then when you get your battery wires in.
+3. For the "cup" holder, the open angle is about 90 degree, which is fine, but can be smaller for better hold. Also, maybe it's better to give a little cut inside the motor holder circle to allow a bit stretching when you are squeezing in your motors.
+4. Orienting all your parts in the same direction makes assembly easier (notice this on the FCB and your remote board).
+
+LEDs:
+1. The calculation is questionable (your final computed through current is said to be 3.94mA, however, this will lead to a different forward voltage again instead of the 2.0-2.1V, which is not matching). Since the through current depends on the forward voltage, the reasonable way is: first, set your expected through current and find the corresponding forward voltage; then, basing on your forward voltage and source voltage, calculate the remaining voltage the attached resistor should undertake; finally, you will have the value of the resistor based on the remaining voltage and through current.
+
+Checks (DRC): 
+1. Why did the error "clearance" at the Net Bridge 1 not resolved? Please explain
+2. Why did width error of N$5 at pin 1 of balun 1 not resolved? Please explain
+3. Why did width error of BAT_GND at Net Bridge 1 not resolved? Please explain

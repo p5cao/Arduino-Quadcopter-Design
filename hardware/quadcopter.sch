@@ -1871,19 +1871,14 @@
 <package name="HDRV2W63P254_2X1_508X254H838_HS">
 <description>Header, Vertical, 2.54 mm pitch; 0.635 mm lead width, 2 pins, 1 row, 2 pins per row, 5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
 <wire x1="-0.4233" y1="1.27" x2="3.81" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-0.885" y1="-3.425" x2="-0.885" y2="9.14" width="0.05" layer="39"/>
-<wire x1="-0.885" y1="9.14" x2="3.425" y2="9.14" width="0.05" layer="39"/>
-<rectangle x1="-0.9" y1="-3.5" x2="3.4" y2="9.2" layer="102"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
 <wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.12" layer="21"/>
 <wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
 <wire x1="-1.27" y1="0.4233" x2="-1.27" y2="-1.27" width="0.12" layer="21"/>
 <wire x1="-1.27" y1="0.4233" x2="-1.27" y2="1.27" width="0.01" layer="51"/>
 <wire x1="-1.27" y1="1.27" x2="-0.4233" y2="1.27" width="0.01" layer="51"/>
-<rectangle x1="-1.9" y1="-3.6" x2="4.4" y2="-1.4" layer="102"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
-<text x="0" y="1.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN1</text>
 <polygon width="0.01" layer="30">
 <vertex x="-0.825" y="-0.825"/>
 <vertex x="-0.825" y="0.825"/>
@@ -1975,15 +1970,16 @@
 <wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
 <text x="1.27" y="-2.54" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="1.27" y="-2.54" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
-<text x="2.54" y="1.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN2</text>
-<wire x1="3.425" y1="-3.425" x2="-0.885" y2="-3.425" width="0.05" layer="39"/>
-<wire x1="3.425" y1="9.14" x2="3.425" y2="-3.425" width="0.05" layer="39"/>
 <wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
 <wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.12" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.12" layer="51"/>
 <pad name="1" x="0" y="0" drill="1" diameter="1.65" shape="square" first="yes"/>
 <pad name="2" x="2.54" y="0" drill="1" diameter="1.65"/>
+<wire x1="-2" y1="2" x2="5" y2="2" width="0.127" layer="39"/>
+<wire x1="5" y1="2" x2="5" y2="-2" width="0.127" layer="39"/>
+<wire x1="5" y1="-2" x2="-2" y2="-2" width="0.127" layer="39"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="39"/>
 </package>
 <package name="SOT23-DBV">
 <rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
@@ -7308,70 +7304,70 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="48.26" y1="142.24" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="N$21" class="3">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="D9" gate="G$1" pin="A"/>
 <wire x1="294.64" y1="-40.64" x2="294.64" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="N$23" class="3">
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="D24" gate="G$1" pin="A"/>
 <wire x1="287.02" y1="-40.64" x2="287.02" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="N$25" class="3">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="D22" gate="G$1" pin="A"/>
 <wire x1="279.4" y1="-40.64" x2="279.4" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="N$26" class="3">
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="D20" gate="G$1" pin="A"/>
 <wire x1="271.78" y1="-40.64" x2="271.78" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="N$27" class="3">
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
 <pinref part="D19" gate="G$1" pin="A"/>
 <wire x1="264.16" y1="-40.64" x2="264.16" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="N$29" class="3">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="D17" gate="G$1" pin="A"/>
 <wire x1="256.54" y1="-40.64" x2="256.54" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="N$34" class="3">
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="D12" gate="G$1" pin="A"/>
 <wire x1="248.92" y1="-40.64" x2="248.92" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="N$35" class="3">
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="D11" gate="G$1" pin="A"/>
 <wire x1="241.3" y1="-40.64" x2="241.3" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="N$36" class="3">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="D10" gate="G$1" pin="A"/>
 <wire x1="233.68" y1="-40.64" x2="233.68" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="N$37" class="3">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="D8" gate="G$1" pin="A"/>
@@ -7452,49 +7448,49 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <label x="294.64" y="-58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="N$30" class="3">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="D16" gate="G$1" pin="A"/>
 <wire x1="337.82" y1="-40.64" x2="337.82" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="N$31" class="3">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <pinref part="D15" gate="G$1" pin="A"/>
 <wire x1="330.2" y1="-40.64" x2="330.2" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="N$32" class="3">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="D14" gate="G$1" pin="A"/>
 <wire x1="322.58" y1="-40.64" x2="322.58" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="N$33" class="3">
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="D13" gate="G$1" pin="A"/>
 <wire x1="314.96" y1="-40.64" x2="314.96" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="N$28" class="3">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="D18" gate="G$1" pin="A"/>
 <wire x1="345.44" y1="-40.64" x2="345.44" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="N$17" class="3">
 <segment>
 <pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="D21" gate="G$1" pin="A"/>
 <wire x1="353.06" y1="-40.64" x2="353.06" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="N$24" class="3">
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="D23" gate="G$1" pin="A"/>
@@ -7537,7 +7533,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <junction x="360.68" y="-53.34"/>
 </segment>
 </net>
-<net name="N$40" class="1">
+<net name="N$40" class="3">
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="D25" gate="G$1" pin="A"/>

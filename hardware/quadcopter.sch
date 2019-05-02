@@ -4476,7 +4476,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="2.4" y1="2.2" x2="2.4" y2="-2.2" width="0.127" layer="39"/>
 <wire x1="2.4" y1="-2.2" x2="-2.4" y2="-2.2" width="0.127" layer="39"/>
 <wire x1="-2.4" y1="-2.2" x2="-2.4" y2="2.2" width="0.127" layer="39"/>
-<text x="-2.2" y="2.5" size="0.9" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.5" y="2.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <rectangle x1="-1.1" y1="-0.8" x2="1.1" y2="0.8" layer="41"/>
 <rectangle x1="-2.5" y1="-2.3" x2="2.5" y2="2.3" layer="42"/>
 <rectangle x1="-2.5" y1="-2.3" x2="2.5" y2="2.3" layer="43"/>
@@ -4541,7 +4541,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="2" y1="2.3" x2="2" y2="-2.3" width="0.127" layer="39"/>
 <wire x1="2" y1="-2.3" x2="-2" y2="-2.3" width="0.127" layer="39"/>
 <wire x1="-2" y1="-2.3" x2="-2" y2="2.3" width="0.127" layer="39"/>
-<text x="-2.3" y="2.5" size="0.9" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.5" y="2.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <rectangle x1="-0.2795" y1="0.6225" x2="0.2795" y2="1.8465" layer="29"/>
 <rectangle x1="-1.2295" y1="-1.8465" x2="-0.6705" y2="-0.6225" layer="29"/>
 <rectangle x1="0.6705" y1="-1.8465" x2="1.2295" y2="-0.6225" layer="29"/>
@@ -4552,7 +4552,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <package name="NET_BRIDGE">
 <smd name="P1" x="-0.2" y="0" dx="0.5" dy="0.5" layer="1" stop="no" cream="no"/>
 <smd name="P2" x="0.2" y="0" dx="0.5" dy="0.5" layer="1" stop="no" cream="no"/>
-<text x="-2" y="0.5" size="0.9" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="0.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-0.6" y1="0.4" x2="0.6" y2="0.4" width="0.127" layer="21"/>
 <wire x1="0.6" y1="0.4" x2="0.6" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.6" y1="-0.4" x2="-0.6" y2="-0.4" width="0.127" layer="21"/>
@@ -4569,8 +4569,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="-1.67" y1="-0.94" x2="-1.67" y2="0.94" width="0.05" layer="39"/>
 <wire x1="-1.67" y1="0.94" x2="1.67" y2="0.94" width="0.05" layer="39"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
-<text x="0" y="-1.5" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
-<text x="0" y="1.5" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-2" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="2" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
 <wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
 <polygon width="0.01" layer="31">
 <vertex x="-1.415" y="0"/>
@@ -5281,8 +5281,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="1.9" y1="-0.8" x2="-1.9" y2="-0.8" width="0.05" layer="39"/>
 <wire x1="-1.9" y1="-0.8" x2="-1.9" y2="0.8" width="0.05" layer="39"/>
 <circle x="2.1" y="0" radius="0.1" width="0.127" layer="21"/>
-<text x="-1.9" y="-1.8" size="0.9" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.4" y="1" size="0.9" layer="27" font="vector">&gt;VALUE</text>
+<text x="3.5" y="-1" size="1.27" layer="25" font="vector" rot="R180">&gt;NAME</text>
+<text x="-2" y="1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
 <package name="LED">
 <smd name="A" x="-1" y="0" dx="1" dy="1.25" layer="1"/>
@@ -5302,8 +5302,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="1.8" y1="1" x2="1.8" y2="-1" width="0.127" layer="39"/>
 <wire x1="1.8" y1="-1" x2="-1.8" y2="-1" width="0.127" layer="39"/>
 <wire x1="-1.8" y1="-1" x2="-1.8" y2="1" width="0.127" layer="39"/>
-<text x="-2.3" y="1.2" size="0.9" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.3" y="-2.1" size="0.9" layer="27" font="vector">&gt;VALUE</text>
+<text x="3" y="2.5" size="1.27" layer="25" font="vector" rot="R180">&gt;NAME</text>
+<text x="-2" y="-2.5" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

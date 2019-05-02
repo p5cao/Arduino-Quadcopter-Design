@@ -1,67 +1,26 @@
-This txt file contains their questions on our schematic and board design.
-Antenna and Antenna Driver
+Reviewer Team Name: sudo_woodo
+  
+Devin Moore  djm016@ucsd.edu
+  Brendon Chen brc019@ucsd.edu
 
-Do all the traces for the antenna driver reside in layer 1?
-Is the trace between the balun and the antenna in the correct net class and the correct width?
-Are the other two capacitors close to the balun?
-Is the trace between the balun and the antenna short (no longer than the corresponding trace in the reference design)?
-Is there ample space around the antenna that is free of metal on all four layers?
-Does the layout roughly match the layout on the FCB?
-Are there any traces routed through the antenna driver area that are not related to the driver in any layer (there should not be)?
-Power and Ground
 
-Does the VBAT power plane reach under all four motor drivers?
-Is the VBAT power plane wider than 0.5mm everywhere?
-Does the 3V3 power plane run under microcontroller and near the IMU’s power pins?
-Does the combination of the BAT_GND and GND ground plane extend to almost every area of the board (with the exception of the area round the antenna)?
-Are the VBAT and 3V3 power pours both in the same metal layer?
-Are there any parts of the power our ground pours that are very narrow? They should be no “necks” narrower than 0.5mm.
-Does the VBAT power plane extend to the battery connector?
-IMU
+Reviewee Team Name: killersquad
+  
+Pengcheng Cao p5cao@eng.ucsd.edu
+  Yangsheng Hu  yah071@eng.ucsd.edu
 
-Is the IMU at the center of the board?
-Are the capacitors specified in the IMU datasheet located as close as is practical to the IMU?
-Is the IMU oriented so that the X and Y axes are aligned with the pitch and roll axis of the quadcopter?
-Are there any traces under the IMU? Is there anything under IMU?
-Headers
 
-Is the FTDI header oriented so the silkscreen is labels for the pins are on the board and the pins will protrude off the board?
-Microcontroller
+Met: April 30, 2019 at ~12:00 PM PT
 
-Is the layout of resonator and the associated caps similar to the layout of those parts on the red board?
-Do all the traces for the resonator and its associated caps lie in layer Top?
-Are the decoupling caps for the microcontroller located as close as possible to power pins of the microcontroller?
-Power Supply
 
-Are the caps associated with the voltage regulator located near the regulator?
-Is the voltage regulator located near the battery connector?
-Does the 3V3 power plane run underneath the voltage regulator?
-Motor Drivers
 
-Are the traces that carry large currents thick enough?
-Aesthetics
+1. LED Connections
 
-Does does the layout look nice?
-Are nearby parts aligned?
-Are the reference designators arranged so they don’t overlap eachother or pads?
-Mechanical
+   
+The wires between LEDs and current limiting resistors are of class default.
+   As a result, they are only 5 mil (0.127 mm) wide on the board. Is that
+   alright since the trace sizes connecting the LED-resistor branches to VBAT
+   and NMOSFETs are 30 mil? 
 
-Given the location of the motors, will the props clear the board (except for the arms)?
-Is the “cup” for the motors the right diameter?
-Are there any large internal holes in the board?
-Is the board roughly symmetrical?
-LEDs
 
-Does the contents of their led_notes.txt make sense?
-Checks
-
-Does DRC check pass without errors?
-If DRC doesn’t pass with no errors, does the team have good explanations for why the errors are ok?
-Gerber Files (ignore for now)
-
-Are areas around the antenna clear in the gerber files?
-Are the power planes where you expect them to be in the gerber files?
-Are there any traces that cross in an unexpected way in the gerber files?
-Are there any elements that should be in the silkscreen that show up in metal layers?
-Are there any elements that should be in the metal layers but that show up on the silkscreen?
-Does the board outline match what was draw in the brd file?
+Our answer: that's a mistake, and we have corrected it.

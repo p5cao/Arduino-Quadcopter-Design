@@ -1,0 +1,72 @@
+Reviewer Team Name: sudo_woodo
+  
+Devin Moore  djm016@ucsd.edu
+  Brendon Chen brc019@ucsd.edu
+
+
+Reviewee Team Name: killersquad
+  
+Pengcheng Cao p5cao@eng.ucsd.edu
+  Yangsheng Hu  yah071@eng.ucsd.edu
+
+
+Met: April 30, 2019 at ~12:00 PM PT
+
+
+
+1. IMU Decoupling Capacitors
+
+   
+According to Prof. Swanson, "Ideally there should be no vias between a
+   decoupling cap and the device." (See Piazza post @145)
+
+
+
+Our answer: We have connected them directly without vias in between now.
+
+2. Under the IMU, Layer 15
+
+   
+What is that yellow rectangle? Is it a trace? We are not sure.
+
+Our answer: We have also built two cutouts within the IMU package, although we've already have the cutouts directly on the board. This will not hurt.
+
+
+
+
+3. MCU Decoupling Capacitors
+
+  
+According to Prof. Swanson, "Ideally there should be no vias between a
+   decoupling cap and the device." (See Piazza post @145)
+
+
+
+Our answer: We have connected them directly without vias in between now.
+
+4. There are name/value labels on vias throughout the board
+
+   
+For example, see R18, D14, D13, ...
+
+
+
+Our answer: We have modified this problem.
+
+5. LEDs
+
+   
+Traces N$37 and N$33 seem a bit sharp (e.g., 90 degree angles)
+
+
+
+Our answer: We have rerouted our board based on a modified version and now no problems on this.
+
+6. DRC
+
+   
+There are wire stubs that should be cleaned up (e.g., RES@3:GND)
+
+
+Our answer: We have cleaned unnecssary wire stubs. Only two necessary ones are left (for antenna and NET_BRIDGE).
+

@@ -1,18 +1,23 @@
-Reviews for the Schematic drawing 
+Reviews for the board design (Sudo_Wodoo)
+--reviewed by Yangsheng Hu and Pengcheng Cao (2019/05/01)
 
-Design review partner team:
-sudo_woodo:
 
-Brendon Chen<brc019@ucsd.edu>
-Devin Moore<djm016@ucsd.edu>
 
--- reviewed by our team:
-killersquad:
+Reviewer Team Name: killersquad
+  
+Pengcheng Cao p5cao@eng.ucsd.edu
+  Yangsheng Hu  yah071@eng.ucsd.edu
 
-Yangsheng Hu<yah071@eng.ucsd.edu>
-Pengcheng Cao<p5cao@eng.ucsd.edu>
 
-05/01/2019
+Reviewee Team Name: sudo_woodo
+  
+Devin Moore  djm016@ucsd.edu
+  Brendon Chen brc019@ucsd.edu
+
+
+Met: April 30, 2019 at ~12:00 PM PT
+
+
 
 Antenna and Antenna Driver:
 1. The wire connection for the antenna is right. However, mayber it's better to do an mimic placement on the board as given in the repo. More specifically,  capacitor C1 can be moved to right up to the Balun.

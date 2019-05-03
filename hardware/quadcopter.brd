@@ -4085,7 +4085,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TMK212B7105KG-T" x="63.39" y="55.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-8" y="22" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="63.39" y="55.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-7" y="18" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C10" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="5" y="0" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="73.58" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4096,7 +4095,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="73.58" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="3.5" y="2" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="73.58" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="7" y="-1.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C11" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-5" y="-2" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-73.58" y="-59.15" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4107,7 +4105,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="-73.58" y="-59.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-6" y="-3.5" size="0.9" layer="25" font="vector" rot="R90"/>
 <attribute name="REVIEWER" value="Swanson" x="-73.58" y="-59.15" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-4" y="-0.5" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C13" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-12" y="2" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="56.58" y="65.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4118,7 +4115,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="56.58" y="65.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-13" y="0.5" size="0.9" layer="25" font="vector" rot="R90"/>
 <attribute name="REVIEWER" value="Swanson" x="56.58" y="65.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-10" y="0.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C14" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.01uF" x="-12" y="-2" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="56.58" y="29.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4129,7 +4125,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="0805J0500104KJT" x="56.58" y="29.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-13" y="-3" size="0.9" layer="25" font="vector" rot="R90"/>
 <attribute name="REVIEWER" value="Swanson" x="56.58" y="29.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-10" y="-4" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C15" library="quadparts_prebuilt" package="CAPMP7343X310_HS" value="220uF" x="-19" y="8" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-49.48" y="-51.69" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4140,7 +4135,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TAJD227K006RNJ" x="-49.48" y="-51.69" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-17.5" y="3.5" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-49.48" y="-51.69" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-22.5" y="10" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C16" library="quadparts_prebuilt" package="CAPMP7343X310_HS" value="220uF" x="19" y="8" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-19.1" y="-9.78" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4151,7 +4145,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TAJD227K006RNJ" x="-19.1" y="-9.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="20.5" y="3.5" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-19.1" y="-9.78" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="21.5" y="9.5" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C17" library="quadparts_prebuilt" package="CAPMP7343X310_HS" value="220uF" x="19" y="-8" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="57.1" y="19.94" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4162,7 +4155,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TAJD227K006RNJ" x="57.1" y="19.94" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="20.5" y="-2" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="57.1" y="19.94" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="22.5" y="-10" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C18" library="quadparts_prebuilt" package="CAPMP7343X310_HS" value="220uF" x="-19" y="-8" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="19.1" y="30.1" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4173,7 +4165,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TAJD227K006RNJ" x="19.1" y="30.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-17.5" y="-2" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="19.1" y="30.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-21.5" y="-10" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C19" library="quadparts_prebuilt" package="CAPMP7343X310_HS" value="220uF" x="11" y="-8" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="49.1" y="40.26" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4184,7 +4175,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TAJD227K006RNJ" x="49.1" y="40.26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="12.5" y="-2" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="49.1" y="40.26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="14.5" y="-10" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C2" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="-9" y="14" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-81.39" y="-27.91" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4195,7 +4185,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TMK212B7105KG-T" x="-81.39" y="-27.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-8" y="12" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-81.39" y="-27.91" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-8" y="15" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C20" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="15" y="-17" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="83.58" y="51.58" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4206,7 +4195,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TMK212B7105KG-T" x="83.58" y="51.58" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="16.5" y="-14" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="83.58" y="51.58" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="17" y="-18" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C21" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="7" y="-17" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-65.39" y="-33.51" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4217,7 +4205,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TMK212B7105KG-T" x="-65.39" y="-33.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="8.5" y="-14" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-65.39" y="-33.51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="8" y="-16" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C3" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="22pF" x="-4" y="24" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="17.59" y="-48.39" size="1.778" layer="27" display="off"/>
@@ -4228,7 +4215,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM21A5C2E220JW01D" x="17.59" y="-48.39" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-7.5" y="23.5" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="17.59" y="-48.39" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-5" y="25" size="0.9" layer="27" font="vector"/>
 </element>
 <element name="C4" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.75pF" x="0" y="27" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="38.1" y="-41.58" size="1.778" layer="27" display="off"/>
@@ -4239,7 +4225,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GQM2195C2AR75CB01D" x="38.1" y="-41.58" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-3.5" y="26.5" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="38.1" y="-41.58" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="1.5" y="26.5" size="0.9" layer="27" font="vector"/>
 </element>
 <element name="C5" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="12pF" x="14" y="14" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="86.39" y="40.67" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4250,7 +4235,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM21A5C2E120JW01D" x="86.39" y="40.67" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="15" y="12" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="86.39" y="40.67" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="16" y="12.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C6" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="12pF" x="14" y="19" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="86.39" y="50.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4261,7 +4245,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM21A5C2E120JW01D" x="86.39" y="50.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="15" y="22" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="86.39" y="50.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="16" y="17.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C7" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="-12" y="19" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="60.39" y="65.99" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4272,7 +4255,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TMK212B7105KG-T" x="60.39" y="65.99" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-11" y="22" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="60.39" y="65.99" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-10" y="18" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C8" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="-12" y="14" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="60.39" y="66.07" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4283,7 +4265,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TMK212B7105KG-T" x="60.39" y="66.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-11" y="12" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="60.39" y="66.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-10" y="13" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C9" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="14" y="-25" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="82.58" y="19.45" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4294,7 +4275,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="82.58" y="19.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="13" y="-28" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="82.58" y="19.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="16" y="-26.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="D1" library="quadparts_prebuilt" package="LEDSC125X200X120-2_HS" value="green" x="24" y="-1" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="79.88" y="20.59" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4305,7 +4285,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="LTST-C170GKT" x="79.88" y="20.59" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="25" y="3" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="79.88" y="20.59" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="26" y="0" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="D10" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="-39" y="42" smashed="yes" rot="R135">
 <attribute name="CREATOR" value="Pengcheng" x="-31.81579375" y="95.881534375" size="1.778" layer="27" rot="R135" display="off"/>
@@ -4315,7 +4294,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-31.81579375" y="95.881534375" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="-31.81579375" y="95.881534375" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="-40" y="44.5" size="0.9" layer="25" font="vector" rot="R135"/>
-<attribute name="VALUE" x="-37" y="42.5" size="0.9" layer="27" font="vector" rot="R135"/>
 </element>
 <element name="D11" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="-37" y="36" smashed="yes" rot="R135">
 <attribute name="CREATOR" value="Pengcheng" x="-34.305921875" y="94.3716625" size="1.778" layer="27" rot="R135" display="off"/>
@@ -4325,7 +4303,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-34.305921875" y="94.3716625" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="-34.305921875" y="94.3716625" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="-34" y="32.5" size="0.9" layer="25" font="vector" rot="R135"/>
-<attribute name="VALUE" x="-37" y="34.5" size="0.9" layer="27" font="vector" rot="R135"/>
 </element>
 <element name="D12" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="-35" y="38" smashed="yes" rot="R135">
 <attribute name="CREATOR" value="Pengcheng" x="-36.79605" y="100.861790625" size="1.778" layer="27" rot="R135" display="off"/>
@@ -4335,7 +4312,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-36.79605" y="100.861790625" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="-36.79605" y="100.861790625" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="-31" y="35.5" size="0.9" layer="25" font="vector" rot="R135"/>
-<attribute name="VALUE" x="-33" y="38.5" size="0.9" layer="27" font="vector" rot="R135"/>
 </element>
 <element name="D17" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="-51" y="48" smashed="yes" rot="MR45">
 <attribute name="CREATOR" value="Pengcheng" x="-101.289434375" y="28.2434375" size="1.778" layer="28" rot="MR45" display="off"/>
@@ -4362,7 +4338,6 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="60.1" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="160-1178-1-ND" x="60.1" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="23" y="3.5" size="0.9" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="23" y="1" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="D20" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="-33" y="-30" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Pengcheng" x="-96.759815625" y="-23.713821875" size="1.778" layer="27" rot="R225" display="off"/>
@@ -4372,7 +4347,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-96.759815625" y="-23.713821875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="-96.759815625" y="-23.713821875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="-33.5" y="-28" size="0.9" layer="25" font="vector" rot="R225"/>
-<attribute name="VALUE" x="-31.5" y="-30" size="0.9" layer="27" font="vector" rot="R225"/>
 </element>
 <element name="D22" library="LED" package="DIODE-LED-LTST-C170" value="yellow" x="-51" y="-48" smashed="yes" rot="MR315">
 <attribute name="CREATOR" value="Pengcheng" x="-53.694075" y="-120.740065625" size="1.778" layer="28" rot="MR315" display="off"/>
@@ -4392,7 +4366,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="20.53" y="89.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C170KSKT" x="20.53" y="89.04" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-28" y="26.5" size="0.9" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-27" y="21.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="D3" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-20" y="17" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="43.5" y="65.26" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4403,7 +4376,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="43.5" y="65.26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-21" y="19.5" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="43.5" y="65.26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-21" y="15" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="D4" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="20" y="17" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="83.5" y="72.88" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4414,7 +4386,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="83.5" y="72.88" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="19" y="19.5" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="83.5" y="72.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="21" y="19" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="D5" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="20" y="-17" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-43.5" y="-80.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4425,7 +4396,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-43.5" y="-80.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="21" y="-19.5" size="0.9" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-43.5" y="-80.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="21" y="-15" size="0.9" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="D6" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-20" y="-17" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-88.58" y="-34.78" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4436,7 +4406,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-88.58" y="-34.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-21" y="-21" size="0.9" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="-88.58" y="-34.78" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-21" y="-19" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="D8" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="-41" y="40" smashed="yes" rot="R135">
 <attribute name="CREATOR" value="Pengcheng" x="-24.8355375" y="84.901278125" size="1.778" layer="27" rot="R135" display="off"/>
@@ -4446,7 +4415,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-24.8355375" y="84.901278125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="-24.8355375" y="84.901278125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="-43" y="42" size="0.9" layer="25" font="vector" rot="R135"/>
-<attribute name="VALUE" x="-41" y="38.5" size="0.9" layer="27" font="vector" rot="R135"/>
 </element>
 <element name="D9" library="LED" package="DIODE-LED-LTST-C170" value="red" x="-40" y="-40" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Pengcheng" x="-89.39140625" y="-28.32566875" size="1.778" layer="27" rot="R225" display="off"/>
@@ -4456,7 +4424,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-89.39140625" y="-28.32566875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="LTST-C170KRKT" x="-89.39140625" y="-28.32566875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="-41" y="-38.5" size="0.9" layer="25" font="vector" rot="R225"/>
-<attribute name="VALUE" x="-39.5" y="-42" size="0.9" layer="27" font="vector" rot="R45"/>
 </element>
 <element name="J1" library="quadparts_prebuilt" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="-11" y="-17" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-14.81" y="-80.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4486,7 +4453,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Amphenol FCI" x="46.99" y="-62.21" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="TH" x="46.99" y="-62.21" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="68016-406HLF" x="46.99" y="-62.21" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-0.35" y="-30.5" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="0" y="-30.5" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="PRICE" value="0.33" x="46.99" y="-62.21" size="1.778" layer="27" display="off"/>
 <attribute name="REVIEWER" value="Swanson" x="46.99" y="-62.21" size="1.778" layer="27" display="off"/>
 </element>
@@ -4548,7 +4515,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="60.61" y="13.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="6" y="-10" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="60.61" y="13.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="7.5" y="-12" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-28" y="-22" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="26.61" y="37.69" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4559,21 +4525,18 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="26.61" y="37.69" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-29.5" y="-22" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="26.61" y="37.69" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-26.5" y="-22" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R11" library="custom" package="RESC2012X60_HS" value="28" x="-46" y="45" smashed="yes" rot="R315">
 <attribute name="CREATOR" value="Yangsheng Hu" x="-39.713821875" y="-38.51638125" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DIST" value="Digikey" x="-39.713821875" y="-38.51638125" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="-39.713821875" y="-38.51638125" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="-48.5" y="46.5" size="0.9" layer="25" font="vector" rot="R315" align="center"/>
-<attribute name="VALUE" x="-47" y="44" size="0.9" layer="27" font="vector" rot="R315" align="center"/>
 </element>
 <element name="R12" library="custom" package="RESC2012X60_HS" value="86.6" x="-36" y="-36" smashed="yes" rot="R45">
 <attribute name="CREATOR" value="Yangsheng Hu" x="50.21045625" y="-27.01974375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="DIST" value="Digikey" x="50.21045625" y="-27.01974375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="DISTPN" value="311-86.6CRCT-ND" x="50.21045625" y="-27.01974375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="-37" y="-35" size="0.9" layer="25" font="vector" rot="R45" align="center"/>
-<attribute name="VALUE" x="-35" y="-37" size="0.9" layer="27" font="vector" rot="R45" align="center"/>
 </element>
 <element name="R13" library="custom" package="RESC2012X60_HS" value="86.6" x="-48" y="-51" smashed="yes" rot="MR135">
 <attribute name="CREATOR" value="Yangsheng Hu" x="-79.430896875" y="1.9835125" size="1.778" layer="28" rot="MR135" display="off"/>
@@ -4587,21 +4550,18 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-72.73681875" y="-8.677590625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="-72.73681875" y="-8.677590625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="-45.5" y="49.5" size="0.9" layer="25" font="vector" rot="R315" align="center"/>
-<attribute name="VALUE" x="-43" y="48" size="0.9" layer="27" font="vector" rot="R315" align="center"/>
 </element>
 <element name="R15" library="custom" package="RESC2012X60_HS" value="28" x="-32" y="31" smashed="yes" rot="R315">
 <attribute name="CREATOR" value="Yangsheng Hu" x="-58.042740625" y="-27.371665625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DIST" value="Digikey" x="-58.042740625" y="-27.371665625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="-58.042740625" y="-27.371665625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="-29.5" y="28" size="0.9" layer="25" font="vector" rot="R135" align="center"/>
-<attribute name="VALUE" x="-33" y="30" size="0.9" layer="27" font="vector" rot="R315" align="center"/>
 </element>
 <element name="R16" library="custom" package="RESC2012X60_HS" value="28" x="-30" y="33" smashed="yes" rot="R315">
 <attribute name="CREATOR" value="Yangsheng Hu" x="-53.348665625" y="-28.06574375" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DIST" value="Digikey" x="-53.348665625" y="-28.06574375" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="-53.348665625" y="-28.06574375" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="-27" y="31" size="0.9" layer="25" font="vector" rot="R315" align="center"/>
-<attribute name="VALUE" x="-29" y="34" size="0.9" layer="27" font="vector" rot="R315" align="center"/>
 </element>
 <element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="330" x="14" y="0" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="68.61" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4612,7 +4572,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-07330RL" x="68.61" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="14" y="2" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="68.61" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="15.5" y="0" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R21" library="custom" package="RESC2012X60_HS" value="28" x="-48" y="51" smashed="yes" rot="MR225">
 <attribute name="CREATOR" value="Yangsheng Hu" x="26.536128125" y="60.87828125" size="1.778" layer="28" rot="MR225" display="off"/>
@@ -4633,14 +4592,12 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="52.61835625" y="-34.796046875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="52.61835625" y="-34.796046875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="-31" y="-32" size="0.9" layer="25" font="vector" rot="R45" align="center"/>
-<attribute name="VALUE" x="-29" y="-34" size="0.9" layer="27" font="vector" rot="R45" align="center"/>
 </element>
 <element name="R26" library="custom" package="RESC2012X60_HS" value="86.6" x="-25" y="23" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Yangsheng Hu" x="34.69" y="87.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="34.69" y="87.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-86.6CRCT-ND" x="34.69" y="87.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-25" y="26" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
-<attribute name="VALUE" x="-23.5" y="23" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R3" library="quadparts_prebuilt" package="RESC2012X60_HS" value="330" x="17" y="0" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="71.61" y="33.02" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4651,7 +4608,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-07330RL" x="71.61" y="33.02" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="17" y="2" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="71.61" y="33.02" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="18.5" y="0" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R4" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="8" y="5" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="62.61" y="41.83" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4662,7 +4618,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="62.61" y="41.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="8" y="7" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="62.61" y="41.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="9.5" y="5" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R5" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="11" y="5" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="65.61" y="45.64" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4673,7 +4628,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="65.61" y="45.64" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="11" y="7" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="65.61" y="45.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="12.5" y="5" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R6" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-25" y="7" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="29.61" y="51.45" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4684,7 +4638,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="29.61" y="51.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-26.5" y="7" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="29.61" y="51.45" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-23.5" y="7" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R7" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="25" y="7" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="79.61" y="55.26" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4695,7 +4648,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="79.61" y="55.26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="23.5" y="7" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="79.61" y="55.26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="26.5" y="7" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R8" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="25" y="-7" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-29.61" y="-59.07" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4706,7 +4658,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="-29.61" y="-59.07" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="23.5" y="-7" size="0.9" layer="25" font="vector" rot="R270" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="-29.61" y="-59.07" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="26.5" y="-7" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="R9" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-25" y="-7" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-79.61" y="-62.88" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4717,7 +4668,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="-79.61" y="-62.88" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-26.5" y="-7" size="0.9" layer="25" font="vector" rot="R270" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="-79.61" y="-62.88" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-23.5" y="-7" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="U1" library="quadparts_prebuilt" package="QFN-64" value="ATMEGA128RFA1" x="0" y="16" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-7.62" y="-22.1" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4771,7 +4721,6 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND" x="66.88" y="-22.08" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="66.88" y="-22.08" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11" y="-14" size="0.9" layer="25" font="vector" align="center"/>
-<attribute name="VALUE" x="11.5" y="-20" size="0.9" layer="27" font="vector" rot="R180" align="center"/>
 </element>
 <element name="U8" library="custom" package="NET_BRIDGE" value="NET_BRIDGE-BRIDGE-SMD" x="14" y="-22" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Yangsheng" x="86.39" y="33.88" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4835,7 +4784,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="-19" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-20" y="-1.5" size="0.9" layer="25" font="vector" rot="R90"/>
 <attribute name="REVIEWER" value="Swanson" x="-19" y="0" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-17" y="-1.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R29" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="28" y="22" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="28" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4846,7 +4794,6 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="28" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="26.5" y="22" size="0.9" layer="25" font="vector" rot="R270" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="28" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="29.5" y="22" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="D13" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="41" y="40" smashed="yes" rot="R45">
 <attribute name="CREATOR" value="Pengcheng" x="41" y="40" size="1.778" layer="27" rot="R45" display="off"/>
@@ -4856,14 +4803,12 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="41" y="40" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="41" y="40" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="43.5" y="41" size="0.9" layer="25" font="vector" rot="R45"/>
-<attribute name="VALUE" x="41" y="37.5" size="0.9" layer="27" font="vector" rot="R45"/>
 </element>
 <element name="R17" library="custom" package="RESC2012X60_HS" value="28" x="46" y="45" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Yangsheng Hu" x="48.68700625" y="41.0402" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DIST" value="Digikey" x="48.68700625" y="41.0402" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="48.68700625" y="41.0402" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="48.5" y="46.5" size="0.9" layer="25" font="vector" rot="R225" align="center"/>
-<attribute name="VALUE" x="47" y="44" size="0.9" layer="27" font="vector" rot="R225" align="center"/>
 </element>
 <element name="D14" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="39" y="42" smashed="yes" rot="R45">
 <attribute name="CREATOR" value="Pengcheng" x="41.899140625" y="31.74695" size="1.778" layer="27" rot="R45" display="off"/>
@@ -4873,14 +4818,12 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="41.899140625" y="31.74695" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="41.899140625" y="31.74695" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="40.5" y="44" size="0.9" layer="25" font="vector" rot="R45"/>
-<attribute name="VALUE" x="37" y="41.5" size="0.9" layer="27" font="vector" rot="R45"/>
 </element>
 <element name="R18" library="custom" package="RESC2012X60_HS" value="28" x="44" y="47" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Yangsheng Hu" x="42.515075" y="52.02045625" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DIST" value="Digikey" x="42.515075" y="52.02045625" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="42.515075" y="52.02045625" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="45.5" y="49.5" size="0.9" layer="25" font="vector" rot="R225" align="center"/>
-<attribute name="VALUE" x="43" y="48" size="0.9" layer="27" font="vector" rot="R225" align="center"/>
 </element>
 <element name="D15" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="37" y="36" smashed="yes" rot="R45">
 <attribute name="CREATOR" value="Pengcheng" x="46.828784375" y="26.17121875" size="1.778" layer="27" rot="R45" display="off"/>
@@ -4890,14 +4833,12 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="46.828784375" y="26.17121875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="46.828784375" y="26.17121875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="34.5" y="32.5" size="0.9" layer="25" font="vector" rot="R45"/>
-<attribute name="VALUE" x="37.5" y="34" size="0.9" layer="27" font="vector" rot="R45"/>
 </element>
 <element name="R19" library="custom" package="RESC2012X60_HS" value="28" x="32" y="31" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Yangsheng Hu" x="26.34314375" y="45.000715625" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DIST" value="Digikey" x="26.34314375" y="45.000715625" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="26.34314375" y="45.000715625" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="30.5" y="28.5" size="0.9" layer="25" font="vector" rot="R225" align="center"/>
-<attribute name="VALUE" x="33" y="30" size="0.9" layer="27" font="vector" rot="R225" align="center"/>
 </element>
 <element name="D16" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="35" y="38" smashed="yes" rot="R45">
 <attribute name="CREATOR" value="Pengcheng" x="47.727925" y="17.91816875" size="1.778" layer="27" rot="R45" display="off"/>
@@ -4907,14 +4848,12 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="47.727925" y="17.91816875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="MPN" value="LTST-C170TBKT" x="47.727925" y="17.91816875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="32" y="35" size="0.9" layer="25" font="vector" rot="R45"/>
-<attribute name="VALUE" x="33.5" y="38" size="0.9" layer="27" font="vector" rot="R45"/>
 </element>
 <element name="R20" library="custom" package="RESC2012X60_HS" value="28" x="30" y="33" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Yangsheng Hu" x="16.211415625" y="45.5157875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DIST" value="Digikey" x="16.211415625" y="45.5157875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DISTPN" value="311-28.0CRCT-ND" x="16.211415625" y="45.5157875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="27.5" y="31.5" size="0.9" layer="25" font="vector" rot="R225" align="center"/>
-<attribute name="VALUE" x="29" y="34" size="0.9" layer="27" font="vector" rot="R225" align="center"/>
 </element>
 <element name="D18" library="LED" package="DIODE-LED-LTST-C170" value="BLUE" x="51" y="48" smashed="yes" rot="MR135">
 <attribute name="CREATOR" value="Pengcheng" x="51" y="48" size="1.778" layer="28" rot="MR135" display="off"/>
@@ -4938,7 +4877,6 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="32.0402" y="-38.687003125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="DISTPN" value="311-86.6CRCT-ND" x="32.0402" y="-38.687003125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="37" y="-35" size="0.9" layer="25" font="vector" rot="R135" align="center"/>
-<attribute name="VALUE" x="35" y="-37" size="0.9" layer="27" font="vector" rot="R135" align="center"/>
 </element>
 <element name="D21" library="LED" package="DIODE-LED-LTST-C170" value="red" x="40" y="-40" smashed="yes" rot="R315">
 <attribute name="CREATOR" value="Pengcheng" x="36.74730625" y="-43.252690625" size="1.778" layer="27" rot="R315" display="off"/>
@@ -4948,7 +4886,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="36.74730625" y="-43.252690625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MPN" value="LTST-C170KRKT" x="36.74730625" y="-43.252690625" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="40" y="-38.5" size="0.9" layer="25" font="vector" rot="R315"/>
-<attribute name="VALUE" x="38.5" y="-41" size="0.9" layer="27" font="vector" rot="R315"/>
 </element>
 <element name="D23" library="LED" package="DIODE-LED-LTST-C170" value="yellow" x="51" y="-48" smashed="yes" rot="MR225">
 <attribute name="CREATOR" value="Pengcheng" x="51" y="-48" size="1.778" layer="28" rot="MR225" display="off"/>
@@ -4975,14 +4912,12 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="33" y="-30" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MPN" value="LTST-C170KSKT" x="33" y="-30" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="33" y="-28.5" size="0.9" layer="25" font="vector" rot="R315"/>
-<attribute name="VALUE" x="30.5" y="-30" size="0.9" layer="27" font="vector" rot="R315"/>
 </element>
 <element name="R27" library="custom" package="RESC2012X60_HS" value="86.6" x="30" y="-33" smashed="yes" rot="R135">
 <attribute name="CREATOR" value="Yangsheng Hu" x="29.363603125" y="-32.363603125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="DIST" value="Digikey" x="29.363603125" y="-32.363603125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="DISTPN" value="311-86.6CRCT-ND" x="29.363603125" y="-32.363603125" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="31" y="-32" size="0.9" layer="25" font="vector" rot="R135" align="center"/>
-<attribute name="VALUE" x="29" y="-34" size="0.9" layer="27" font="vector" rot="R135" align="center"/>
 </element>
 <element name="Q6" library="custom" package="SOT-23_N_MOSFET" value="MOSFET-VISHAY-SOT23-N-MOSFET" x="27" y="28" smashed="yes">
 <attribute name="CREATOR" value="Yangsheng Hu" x="22" y="34.3" size="1.778" layer="27" display="off"/>
@@ -4999,7 +4934,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="-5" y="2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-6" y="0.5" size="0.9" layer="25" font="vector" rot="R90"/>
 <attribute name="REVIEWER" value="Swanson" x="-5" y="2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-3" y="0.5" size="0.9" layer="27" font="vector" rot="R90"/>
 </element>
 </elements>
 <signals>

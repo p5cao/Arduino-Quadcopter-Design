@@ -2,7 +2,27 @@ CSE-276e
 Team KillersQuad
 Members:Pengcheng Cao, Yangsheng Hu
 
-Overview: 18 LED lights in total will be used on the board -- 13 on the top and 5 on the bottom. Note that we are not including the two indicator LEDs (1 red and 1 green) near the MCU in this note.
+OVERVIEW: 
+18 LED lights in total will be used on the board -- 13 on the top and 5 on the bottom. Note that we are not including the two indicator LEDs (1 red and 1 green) near the MCU in this note.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Color        expected max current          forward voltages          max Supply voltages                   resistor values 
+---------------------------------------------------------------------------------------------------------------------------------------
+Red	25 mA			2 V		       4.2 V			88 Ohm (86.6 Ohm used)
+---------------------------------------------------------------------------------------------------------------------------------------
+Yellow 	25 mA			2 V		       4.2 V			88 Ohm (86.6 Ohm used)
+---------------------------------------------------------------------------------------------------------------------------------------
+Blue	25 mA			3.5 V	 	       4.2 V			28 Ohm
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Trace width: 5mil (0.127 mm, same as our default trace setting) used.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+DETAILS:
+
+For width 0.127 mm (5 mil, same as our default trace setting), thickness 1 oz/ft^2, temperature 25 degrees Celcius, and length 100mm, the estimated trace resistance will be 0.382 Ohms, leading to a max voltage drop 0.382 Ohms*25 mA = 0.00955 V = 0.23% of the Voltage source. 
+	Ref: http://circuitcalculator.com/wordpress/2006/01/24/trace-resistance-calculator
 
 We are choosing the LTST-C170 series of LEDs emitting red, yellow, and blue lights manufactured by LITE-ON Technology Corporation. The red, yellow, and blue LEDs are of the MFR number LTST-C170KRKT, LTST-C170KSKT, and LTST-C170TBKT respectively.  The layout of LEDs ( for X-type rotor layout) will be as follows: 
 

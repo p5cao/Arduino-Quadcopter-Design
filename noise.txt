@@ -1,0 +1,16 @@
+i. How quickly you are reading data from the IMU
+
+The baud rate we use to transfer data through serial port from IMU is 19200 baud.
+
+ii. Our ODR
+
+The output data rate we chose to use is 238Hz.
+
+iii. Our ODR ratio
+
+The ODR ratio is chosen to be 4. 238hz ODR + 76 Hz LPF1 cutoff divided by 4. 78hz LPF2 cutoff if enabled.
+
+iv. The cutoff frequencies for the accelerometer and gyro filters.
+
+
+v. The configuration values you used for the registers you medified (written using the macros.)

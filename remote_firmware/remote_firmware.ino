@@ -1,11 +1,19 @@
+#include <SPI.h>
+
 // Remote control board 
-// Note: Please maintain this code without further modification directly on it
-// by: Yangsheng Hu and Pengcheng Cao; Date: 6:40pm, Apr. 17th, 2019
+// Note: Based on the version 4 from "Date: 15:13pm, May. 13th, 2019". Now, PID for all directions are added.
+// by: Yangsheng Hu and Pengcheng Cao
+
+// Remark: Two magic number used: magic-65 (replaced by 67): only receive reset info from FCB once starting from reset;
+                               // magic-66: receive normal info
+          // Note: Be careful about the magic number, the radio was disturbed by my home WIFI when I was using 65 with channel 11. 
+          // It keeped giving me wrong info and reset my remote again and again. 
 
 #include <quad_remote.h>
 #include <radio.h>
 #include <EEPROM.h>
 
+#include <Adafruit_Simple_AHRS.h>
 
 void readGimbal(int serialDisp); // for testing
 int readGimbal_calibrated(int Value,int minVal, int maxVal);
@@ -14,8 +22,13 @@ void update_display();
 void btn1_pressed(bool);
 void btn2_pressed(bool);
 
+void btn_left_pressed(bool down);
 void btn_right_pressed(bool down);
 void btn_center_pressed(bool down);
+void knobs_update();
+void knob_pressed(bool down);
+void update_display_PID();
+
 
 void arm_monitor(int gimbalYaw, int gimbalThrottle, int gimbalRoll, int gimbalPitch);// arm the board when conditions are satisfied
 
@@ -26,6 +39,9 @@ const unsigned long period = 100;  //the value is a number of milliseconds
 int disarm_mode = 1; // armed mode: arm = 0; disarmed mode (default): 1. Note: press BTN2 to disarm.
 int calibrate_mode = 0; // uncalibrated mode (default): 0; calibrated mode: 1. Note: press BTN1 to change it
 int counter_CalMode = 0; // Calbration procedures counter. 1,2:Yaw,3,4:Throttle,5,6:Roll,7,8:Pitch
+int PID_mode = 0; // PID mode: online tuning = 1; offline = 0.
+int P_I_D = 0; // Under PID_mode=1, PID gain: Kp: 0; Ki: 2; Kd: 1.
+
 
 
 // all the info data sent on radio
@@ -36,11 +52,21 @@ struct Quad_Info{
   int gimbalRoll;
   int gimbalPitch;
   int disarm_mode;
+  float PID_Kp; //PID tuning parameters
+  float PID_Ki;
+  float PID_Kd;
+  float filtered_pitch;
+  float PID_output;
+//  float PID_P;
+//  float PID_D;
+//  float PID_I;
+  // quad_data_t orientation; // no need to send the IMU data in fact
 };
+Quad_Info measurements;
 
 void setup() {
   // put your setup code here, to run once:
-  const int SERIAL_BAUD = 9600; // Baud rate for serial port
+  const int SERIAL_BAUD = 19200; // Baud rate for serial port
   Serial.begin(SERIAL_BAUD); // Start up serial
   delay(100);
 
@@ -49,18 +75,26 @@ void setup() {
   // The buttons and the knob trigger these call backs.       
   btn1_cb = btn1_pressed;
   btn2_cb = btn2_pressed;
+  btn_left_cb =  btn_left_pressed;
   btn_right_cb = btn_right_pressed;
   btn_center_cb =  btn_center_pressed;
-
+  knobs_update_cb = knobs_update; 
+  knob1_btn_cb = knob_pressed;
+  lcd.setBacklight(155,155,50);
+  
   // *** set up the radio
   const int CHANNEL = 11; // radio channel number
   rfBegin(CHANNEL);// Initialize ATmega128RFA1 radio on channel (can be 11-26)
   // Send a message to other RF boards on this channel
   // rfPrint("ATmega128RFA1 Dev Board Online!\r\n");
 
+  // *** set up the initial PID parameters
+  measurements.PID_Kp = 0; // 0.55;
+  measurements.PID_Kd = 0; // 0.2;
+  measurements.PID_Ki = 0; //0.002;
+  
   // *** set up the millis()
   startMillis = millis();  //initial start time
-
 }
 
 
@@ -77,16 +111,28 @@ void loop() {
 
   int minVal, maxVal;
   EEPROM.get(1,minVal); EEPROM.get(3,maxVal);
-  int gimbalYaw = readGimbal_calibrated(analogRead(A0), minVal, maxVal); //509~53
-
+  // int gimbalYaw = readGimbal_calibrated(analogRead(A0), minVal, maxVal); //509~53
+  int gimbalYaw = readGimbal_calibrated(analogRead(A0), 509, 53); //Not using calibration ones
+//  int gimbalYaw1 = analogRead(A0);
+//  Serial.print(gimbalYaw1); Serial.print(F("  "));
+  
   EEPROM.get(5,minVal); EEPROM.get(7,maxVal);
-  int gimbalThrottle = readGimbal_calibrated(analogRead(A1), minVal, maxVal); // 70~516
+  // int gimbalThrottle = readGimbal_calibrated(analogRead(A1), minVal, maxVal); // 70~514
+  int gimbalThrottle = readGimbal_calibrated(analogRead(A1), 70, 514); //Not using calibration ones
+//  int gimbalThrottle1 = analogRead(A1);
+//  Serial.print(gimbalThrottle1); Serial.print(F("  ")); 
   
   EEPROM.get(9,minVal); EEPROM.get(11,maxVal);
-  int gimbalRoll = readGimbal_calibrated(analogRead(A2), minVal, maxVal); // 76~524
+  // int gimbalRoll = readGimbal_calibrated(analogRead(A2), minVal, maxVal); // 76~524
+  int gimbalRoll = readGimbal_calibrated(analogRead(A2), 76, 524); //Not using calibration ones
+//  int gimbalRoll1 = analogRead(A2);
+//  Serial.print(gimbalRoll1); Serial.print(F("  "));
 
   EEPROM.get(13,minVal); EEPROM.get(15,maxVal);
-  int gimbalPitch = readGimbal_calibrated(analogRead(A3), minVal, maxVal); // 518~68
+  // int gimbalPitch = readGimbal_calibrated(analogRead(A3), minVal, maxVal); // 516~68
+  int gimbalPitch = readGimbal_calibrated(analogRead(A3), 516, 68); //Not using calibration ones
+//  int gimbalPitch1 = analogRead(A3);
+//  Serial.print(gimbalPitch1); Serial.println(F("  "));
 
   arm_monitor(gimbalYaw, gimbalThrottle, gimbalRoll, gimbalPitch);
   
@@ -117,7 +163,7 @@ void loop() {
   
   
   // Serial.println("Coming hehe");
-  Quad_Info measurements;
+  // Quad_Info measurements;
   measurements.magic = 66;
   measurements.gimbalYaw = gimbalYaw;
   measurements.gimbalThrottle = gimbalThrottle;
@@ -156,7 +202,21 @@ void loop() {
     rfRead(b, 2); // Our magic number only take up 2 characters in the small-endian order such as: magic = b[1],b[0] = 00 66
     int magic_receive = b[0]; // small-endian order for each quantity, i.e., since int magic has two characters, then the lower digit character goes in first.
     // Serial.println(magic_receive);
-    if (magic_receive==66){
+    if (magic_receive==67){ // reset info from FCB
+      rfRead(&b[2],len-2); // read the rest if the magic number is matching ours
+      Quad_Info r_measurements_reset;
+      memcpy(&r_measurements_reset,b,sizeof(r_measurements_reset)); // reconstruct the orignal 'struct' type data
+      // Serial.write(r_measurements_reset.magic); // show the magic number in the serial port
+      // Serial.print(sizeof(magic_receive));
+      if (r_measurements_reset.magic==67){    // if the magic number is matching ours, then it is our data and should be processed
+        // Serial.println((int)r_measurements_reset.disarm_mode);
+        disarm_mode = r_measurements_reset.disarm_mode;
+        if (disarm_mode==1){
+          lcd.clear(); //lcd.home(); lcd.print("Disarmed Mode!");
+        }
+        delay(10);      
+      }
+    }else if (magic_receive==66) { // normal info from FCB
       rfRead(&b[2],len-2); // read the rest if the magic number is matching ours
       
       Quad_Info r_measurements;
@@ -164,15 +224,27 @@ void loop() {
       // Serial.write(r_measurements.magic); // show the magic number in the serial port
 
       if (r_measurements.magic==66){    // if the magic number is matching ours, then it is our data and should be processed
-        Serial.println((int)r_measurements.disarm_mode);
-        disarm_mode = r_measurements.disarm_mode;
-        if (disarm_mode==1){
-          lcd.clear(); //lcd.home(); lcd.print("Disarmed Mode!");
-        }
+        // Serial.println((int)r_measurements.disarm_mode);
+        // Serial.println(r_measurements.orientation.roll);
+        Serial.print(r_measurements.PID_output);
+        Serial.print(F(" "));
+        Serial.print(r_measurements.filtered_pitch);
+//        Serial.print(F(" "));
+//        Serial.print(r_measurements.PID_P);
+//        Serial.print(F(" "));
+//        Serial.print(r_measurements.PID_D);
+//        Serial.print(F(" "));
+//        Serial.print(r_measurements.PID_I);               
+        Serial.println(F(" "));
+        
+        
+        //*******do something then
         delay(10);      
       }
     }
 
+    
+    
   //***************************************
 //    //*** Another way: read the whole data first. If the magic number is not matching ours, then ignore it.
 //    rfRead(b, len); // read the data into the buffer
@@ -324,22 +396,14 @@ void btn2_pressed(bool down) {
   if(down) {
     // Serial.println("btn2 down");
     disarm_mode = 1; // disarm both the remote and quad boards.
+    PID_mode = 0; // PID mode offline
+    lcd.noBlink();
     lcd.clear(); // lcd.home(); lcd.print("Disarmed Mode!");
   }else {
     Serial.println("btn2 up");    
   }
 }
-
-void btn_right_pressed(bool down) {
-  if(down) {
-    Serial.println("right down");
-    // update_display();
-  } else {
-    Serial.println("right up");    
-  }
-}
-
-    
+   
 void btn_center_pressed(bool down) {
   if(down) {
     // Serial.println("center down");
@@ -357,5 +421,82 @@ void arm_monitor(int gimbalYaw, int gimbalThrottle, int gimbalRoll, int gimbalPi
       disarm_mode = 0; // turn into armed mode
       lcd.clear(); lcd.home(); lcd.print("Armed Mode!");
     }  
+  }
+}
+
+void update_display_PID(){
+  if(P_I_D==0){// tuning Kp
+        lcd.setCursor(0,1); lcd.print("    "); delay(50); // remove unused digits when the number of significant digits change 
+        lcd.setCursor(0,1); lcd.print("P"); delay(50); lcd.print((int)(measurements.PID_Kp*1000)); 
+        knob1.setCurrentPos((int)(measurements.PID_Kp*1000/20)); // resolution is 0.02
+      }else if(P_I_D==1){// tuning Kd
+        lcd.setCursor(5,1); lcd.print("    "); delay(50); // remove unused digits when the number of significant digits change
+        lcd.setCursor(5,1); lcd.print("D"); delay(50); lcd.print((int)(measurements.PID_Kd*1000)); 
+        knob1.setCurrentPos((int)(measurements.PID_Kd*1000/20));
+      }else{
+        lcd.setCursor(10,1); lcd.print("    "); delay(50); // remove unused digits when the number of significant digits change
+        lcd.setCursor(10,1); lcd.print("I"); delay(50); lcd.print((int)(measurements.PID_Ki*1000)); 
+        knob1.setCurrentPos((int)(measurements.PID_Ki*1000/10)); // resolution is 0.01
+      }
+}
+
+
+void btn_left_pressed(bool down) {
+  if(down) {
+    // Serial.println("left down");
+    if(PID_mode==1 && disarm_mode==0){
+      P_I_D = (P_I_D-1)%3;
+      update_display_PID();
+    }
+  } else {
+    // Serial.println("left up");
+  }
+}
+
+void btn_right_pressed(bool down) {
+  if(down) {
+    // Serial.println("right down");
+    if(PID_mode==1 && disarm_mode==0){
+      P_I_D = (P_I_D+1)%3;
+      update_display_PID();
+    }
+  } else {
+    // Serial.println("right up");    
+  }
+}
+
+void knobs_update() { // the code for knobs and buttons should be as short as possible
+  // Serial.print("Knob: ");
+  // Serial.println(knob1.getCurrentPos());
+  if(PID_mode==1 && disarm_mode==0){ //PID online tuning mode is on under arm mode
+    if(P_I_D == 0){ // the operating code should be moved to the loop(){}
+      measurements.PID_Kp = (float)knob1.getCurrentPos()*20/1000; // resolution is 0.02
+    }else if(P_I_D == 1){
+      measurements.PID_Kd = (float)knob1.getCurrentPos()*20/1000;
+    }else if(P_I_D == 2){
+      measurements.PID_Ki = (float)knob1.getCurrentPos()*10/1000; // resolution is 0.01
+    }
+    update_display_PID(); 
+  }
+}
+
+void knob_pressed(bool down) {
+  if(down) {
+    // Serial.println("knob down");
+    // knob1.setCurrentPos(0); // No need to reset the PID value to zero, which is also dagerous.
+    PID_mode = (PID_mode+1)%2; 
+    P_I_D = 0; knob1.setCurrentPos((int)(measurements.PID_Kp*1000/20)); // this initialization is important, or your quad will blow up.
+    if(PID_mode==1 && disarm_mode==0){
+      lcd.clear(); lcd.home(); lcd.print("PID Mode!(10e-3)"); lcd.blink();
+    }else{
+      lcd.clear(); P_I_D = 0; lcd.noBlink();
+      lcd.home(); 
+      if(disarm_mode==0){
+        lcd.print("Armed Mode!"); // Still armed mode!! 
+      }
+      
+    }
+  }else {
+    // Serial.println("knob up");    
   }
 }
